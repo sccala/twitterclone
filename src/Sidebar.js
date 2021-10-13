@@ -12,7 +12,7 @@ import PermIdentityIcon from '@material-ui/icons/PermIdentity'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz'
 import { Button } from '@material-ui/core'
 
-const Sidebar = () => {
+export  const Sidebar = () => {
   return (
     <div className='sidebar'>
       {/*Twitter icon */}
@@ -33,4 +33,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+
