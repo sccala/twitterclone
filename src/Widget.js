@@ -9,12 +9,9 @@ export const Widget = () => {
         <SearchIcon className='widgets__searchIcon' />
         <input placeholder='Search Twitter' type='text' />
       </div>
-
       <div className='widgets__widgetContainer'>
         <h2>What's happening</h2>
-
         <Tweet tweetId='841418541026877441' />
-
         <Timeline
           dataSource={{
             sourceType: 'profile',
@@ -22,7 +19,6 @@ export const Widget = () => {
           }}
           options={{ height: 400 }}
         />
-
         <Share
           url={'https://facebook.com'}
           options={{ text: '#reactjs is awesome', via: 'cleverqazi' }}

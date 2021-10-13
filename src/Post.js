@@ -6,19 +6,19 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
 import PublishIcon from '@material-ui/icons/Publish'
 import { Avatar } from '@material-ui/core'
 
-export const Post = ({ displayName, username, verified, timestamp, image, text }) => {
+export const Post = ({ displayName, username, verified, image, text, avatar }) => {
   return (
-    <div className='post'>
+    <div className='post' >
       <div className='post__avatar'>
-        <Avatar src='https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png' />
+        <Avatar src={avatar} />
       </div>
       <div className='post__body'>
         <div className='post__header'>
-          <div className='headerText'>
-            <h3 className=''>
-              Rafeh Qazi
-              <span>
-                <VerifiedUserIcon className='post__badge' />
+          <div className='post__headerText'>
+            <h3>
+              {displayName}{' '}
+              <span className='post__headerSpecial'>
+                {verified && <VerifiedUserIcon className='post__badge' />} @{username}
               </span>
             </h3>
           </div>
