@@ -3,7 +3,7 @@ import './TweetBox.css'
 import { Avatar, Button } from '@material-ui/core'
 import db from './firebase'
 
-export const TweetBox = () => {
+function TweetBox() {
   const [tweetMessage, setTweetMessage] = useState('')
   const [tweetImage, setTweetImage] = useState('')
 
@@ -11,8 +11,8 @@ export const TweetBox = () => {
     e.preventDefault()
 
     db.collection('posts').add({
-      displayName: 'Fake Name',
-      username: 'assdfsv',
+      displayName: 'Rafeh Qazi',
+      username: 'cleverqazi',
       verified: true,
       text: tweetMessage,
       image: tweetImage,
