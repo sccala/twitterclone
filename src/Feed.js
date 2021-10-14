@@ -1,15 +1,16 @@
+// @ts-nocheck
 import React, { useState, useEffect } from 'react'
 import TweetBox from './TweetBox'
-import {Post} from './Post'
+import Post from './Post'
 import './Feed.css'
 import db from './firebase'
 import FlipMove from 'react-flip-move'
 
-export const Feed=()=> {
+export const Feed = () => {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-    db.collection('post').onSnapshot(snapshot => setPosts(snapshot.docs.map(doc => doc.data())))
+    db.collection('posts').onSnapshot(snapshot => setPosts(snapshot.docs.map(doc => doc.data())))
   }, [])
 
   return (
@@ -23,9 +24,9 @@ export const Feed=()=> {
       <FlipMove>
         {posts.map(post => (
           <Post
-            key={post.text}
-            displayName={post.displayName}
+            key={post.id}
             username={post.username}
+            displayName={post.displayName}
             verified={post.verified}
             text={post.text}
             avatar={post.avatar}
