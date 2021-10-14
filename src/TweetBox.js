@@ -10,7 +10,7 @@ function TweetBox() {
   const sendTweet = e => {
     e.preventDefault()
 
-    db.collection('post').add({
+    db.collection('posts').add({
       displayName: 'Rafeh Qazi',
       username: 'cleverqazi',
       verified: true,
