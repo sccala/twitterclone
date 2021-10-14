@@ -11,17 +11,17 @@ export const Widget = () => {
       </div>
       <div className='widgets__widgetContainer'>
         <h2>What's happening</h2>
-        <Tweet tweetId='841418541026877441' />
+        <Tweet tweetId='841418541026877222' />
         <Timeline
           dataSource={{
             sourceType: 'profile',
-            screenName: 'cleverqazi',
+            screenName: 'reactjs',
           }}
           options={{ height: 400 }}
         />
         <Share
           url={'https://facebook.com'}
-          options={{ text: '#reactjs is awesome', via: 'cleverqazi' }}
+          options={{ text: '#reactjs is awesome', via: 'reactjs' }}
         />
       </div>
     </div>

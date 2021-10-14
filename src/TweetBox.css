@@ -22,8 +22,11 @@
 }
 
 .tweetBox__imageInput {
-  border: none;
+  border: 4px;
   padding: 10px;
+   max-width:300px;
+  max-height:400px;
+ 
 }
 
 .tweetBox__tweetButton {
