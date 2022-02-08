@@ -11,4 +11,4 @@ This is a Twitter clone web app with Firebase cloud database connected. Successf
 - Firebase Cloud Database
 
 ## Demo
-Deployed on [Netlify](https://twitterclonefirebase.netlify.app/). Data is pulled from Firebase Cloud database.
+Deployed on Netlify. Data is pulled from Firebase Cloud database.
